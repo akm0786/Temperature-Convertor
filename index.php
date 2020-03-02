@@ -30,7 +30,7 @@
 	.main {
 
 	width: 50%;
-	height: 300px;
+	height: 100vh;
 	position: relative;
 	top: 60px;
 	left:200px;
@@ -131,14 +131,14 @@
 					{
 
 						$Fahrenheit=$c_or_f*9/5+32;
-						echo "Celcius VALUE IN FAHRENHEIT IS:".$Fahrenheit;
+						echo "CELCIUS VALUE IN FAHRENHEIT IS=".$Fahrenheit;
 					}
 					else{
 
 
 						$Celcius=($c_or_f-32)*5/9;
 
-						echo "FAHRENHEIT VALUE IN CELCIUS IS:".$Celcius;
+						echo "FAHRENHEIT VALUE IN CELCIUS IS=".$Celcius;
 					}
 				}
 
