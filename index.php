@@ -19,7 +19,7 @@
 		margin:0;
 		padding: 0;
 		width:100%;
-		height: 650px;
+		height: 100vh;
 		box-sizing: border-box;
 		background: green;
 		  
@@ -30,7 +30,7 @@
 	.main {
 
 	width: 50%;
-	height: 100vh;
+	height: 300px;
 	position: relative;
 	top: 60px;
 	left:200px;
