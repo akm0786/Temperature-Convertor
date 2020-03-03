@@ -20,7 +20,8 @@
 	body{
 		margin:0;
 		padding: 0;
-		width:100vh;
+		width:100%;
+
 		height: 100vh;
 		position:fixed; 
 
@@ -32,32 +33,38 @@
 	}
 
 	.main {
-
-	width: 50%;
-	height: 45vh;
-	position: fixed;
-	top: 60px;
-	left:20%;
-	padding-right: 20px;
+		border:0px solid black;
+	width: 500px;
+	height: 350px;
+	margin: auto;
+	position: relative;
+	top: 160px;
+	box-sizing:border-box; 
+	border-radius: 30px;
+	background: #191919;
+	
+	
+	
 	font-weight: 600;
-	border: 0px solid #000;
+	
 	color: white;
 	display: flex;
-	padding-left: 66px;
+	
 	flex-direction: column;
 	font-size: 19px;
 	box-sizing: all;
-	padding-top: 60px;
+	
 	justify-content: center;
-	align-items: start;
+	align-items: center;
 	background-color: #404001;
 	border-radius: 9px;
 
 	}
 
-	.main p,h3{
-		/*padding-right: 40px;*/
+	.main p,h2{
+		
 		color: yellow;
+
 	}
 
 	.main > h3{
@@ -110,7 +117,7 @@
 </head>
 <body>
 	
-	<h3><pre>                                  TEMPERATURE CONVERTOR</pre></h3>
+	<h2><pre>                      TEMPERATURE CONVERTOR</pre></h2>
 	<div class="main">
 	
 			<form method="POST">
