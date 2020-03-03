@@ -38,7 +38,7 @@
 	height: 350px;
 	margin: auto;
 	position: relative;
-	top: 160px;
+	top: 100px;
 	box-sizing:border-box; 
 	border-radius: 30px;
 	background: #191919;
@@ -64,13 +64,14 @@
 	.main p,h2{
 		
 		color: yellow;
-
-	}
-
-	.main > h3{
+		letter-spacing: 1.5px;
 		display: flex;
+		padding-left: 40px;
 		justify-content: end;
+
 	}
+
+	
  input[type=text]{
 
 		border: 0px solid #000;
@@ -117,7 +118,7 @@
 </head>
 <body>
 	
-	<h2><pre>                      TEMPERATURE CONVERTOR</pre></h2>
+	<h2><pre>       TEMPERATURE CONVERTOR</pre></h2>
 	<div class="main">
 	
 			<form method="POST">
@@ -150,14 +151,14 @@
 					{
 
 						$Fahrenheit=$c_or_f*9/5+32;
-						echo "Celcius VALUE IN FAHRENHEIT IS:".$Fahrenheit;
+						echo "CELCIUS VALUE IN FAHRENHEIT IS=".$Fahrenheit;
 					}
 					else{
 
 
 						$Celcius=($c_or_f-32)*5/9;
 
-						echo "FAHRENHEIT VALUE IN CELCIUS IS:".$Celcius;
+						echo "FAHRENHEIT VALUE IN CELCIUS IS=".$Celcius;
 					}
 				}
 
