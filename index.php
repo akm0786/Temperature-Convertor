@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>TEMPERATURE CONVERTER</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
 
 	<style>
 
@@ -14,12 +15,15 @@
 
 		}
 
-
+	
+	
 	body{
 		margin:0;
 		padding: 0;
-		width:100%;
+		width:100vh;
 		height: 100vh;
+		position:fixed; 
+
 		box-sizing: border-box;
 		background: green;
 		  
@@ -30,10 +34,11 @@
 	.main {
 
 	width: 50%;
-	height: 300px;
-	position: relative;
+	height: 45vh;
+	position: fixed;
 	top: 60px;
-	left:200px;
+	left:20%;
+	padding-right: 20px;
 	font-weight: 600;
 	border: 0px solid #000;
 	color: white;
@@ -41,17 +46,23 @@
 	padding-left: 66px;
 	flex-direction: column;
 	font-size: 19px;
-	box-sizing: border-box;
+	box-sizing: all;
 	padding-top: 60px;
 	justify-content: center;
 	align-items: start;
 	background-color: #404001;
 	border-radius: 9px;
+
 	}
 
-	.main p,h1{
-		padding-right: 40px;
+	.main p,h3{
+		/*padding-right: 40px;*/
 		color: yellow;
+	}
+
+	.main > h3{
+		display: flex;
+		justify-content: end;
 	}
  input[type=text]{
 
@@ -60,6 +71,7 @@
 		padding: 8px;
 		transition: 0.2;
 		font-size: 19px;
+		box-sizing: border-box;
 		background-color: yellow;
 	}
 
@@ -98,7 +110,7 @@
 </head>
 <body>
 	
-	<h1><pre>     WELCOME TO TEMPERATURE CONVERTOR</pre></h1>
+	<h3><pre>                                  TEMPERATURE CONVERTOR</pre></h3>
 	<div class="main">
 	
 			<form method="POST">
@@ -131,14 +143,14 @@
 					{
 
 						$Fahrenheit=$c_or_f*9/5+32;
-						echo "CELCIUS VALUE IN FAHRENHEIT IS=".$Fahrenheit;
+						echo "Celcius VALUE IN FAHRENHEIT IS:".$Fahrenheit;
 					}
 					else{
 
 
 						$Celcius=($c_or_f-32)*5/9;
 
-						echo "FAHRENHEIT VALUE IN CELCIUS IS=".$Celcius;
+						echo "FAHRENHEIT VALUE IN CELCIUS IS:".$Celcius;
 					}
 				}
 
